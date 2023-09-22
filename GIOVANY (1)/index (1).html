@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+Año<select id="año" name="role" id="role" class="form-control form-select" required>
+    <option value="2023">2023</option>
+    <option value="2022">2022</option>
+    <option value="2021">2021</option>
+    <option value="2020">2020</option>
+    <option value="2019">2019</option>
+    <option value="2018">2018</option>
+    <option value="2017">2017</option>
+    <option value="2016">2016</option>
+    <option value="2015">2015</option>
+    <option value="2014">2014</option>
+    <option value="2013">2013</option>
+</select>
+<p></p>
+
+    Mes<select id="mes" name="role" id="role" class="form-control form-select" required>
+        <option value="enero">enero</option>
+        <option value="febrero">febrero</option>
+        <option value="marzo">marzo</option>
+        <option value="abril">abril</option>
+        <option value="mayo">mayo</option>
+        <option value="junio">junio</option>
+        <option value="julio">julio</option>
+        <option value="agosto">agosto</option>
+        <option value="septiembre">septiembre</option>
+        <option value="octubre">octubre</option>
+        <option value="noviembre">noviembre</option>
+        <option value="diciembre">diciembre</option>
+    </select>
+    <p></p>
+
+    <label id="trimestres" for="frutas">Trimestre</label>
+    <input type="text" id="trimestre" name="fruta" list="trimestres-sugeridos">
+    <datalist id="trimestres-sugeridos">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </datalist>
+    <p></p>
+
+    <label id="fechas" for="frutas">Fecha Evaluacion</label>
+    <input type="date" id="fecha" name="fruta" list="trimestres-sugeridos">
+    <p></p>
+
+    <input type="radio" id="html" name="fav_language" value="Gana" checked>
+    <label for="html">Gana</label><br>
+    <input type="radio" id="css" name="fav_language" value="Pierde">
+    <label for="css">Pierde</label><br>
+<P></P>
+
+<label id="competencias" for="fruta">Competencia</label>
+<select id="competencia">
+    <option value="">Selecciona una opción</option>
+    <option value="Diseño">Diseño</option>
+    <option value="Analisis">Analisis</option>
+</select><p></p>
+
+<div id="opciones-diseno" style="display: none;">
+    <label for="opcion-diseno">Opciones de Diseño:</label>
+    <select id="opcion_diseno">
+        <option value="Opción 1">1.1 Resultado D1</option>
+        <option value="Opción 2">1.2 Resultado D2</option>
+    </select>
+</div>
+
+<div id="opciones-analisis" style="display: none;">
+    <label for="opcion-analisis">Opciones de Análisis:</label>
+    <select id="opcion_analisis">
+        <option value="Opción 3">2.1 Resultado A1</option>
+        <option value="Opción 4">2.2 Resultado A2</option>
+    </select>
+</div>
+
+<label for="nota1">Nota 1</label>
+<input type="text" id="nota1" name="fruta">
+<label for="nota2">Nota 2</label>
+<input type="text" id="nota2" name="fruta">
+<label for="nota3">Nota 3</label>
+<input type="text" id="nota3" name="fruta">
+<button type="button" onclick="mostrarcalculo()">Calcular</button>
+
+
+<p id="datosSeleccionados"></p>
+
+
+<button type="button"
+onclick="document.getElementById(mostrarDatos(año.value,mes.value,trimestre.value,competencia.value,radio=document.querySelector('input[name=fav_language]:checked').value,fecha.value))">Datos</button>
+
+<button type="button" onclick="general()">funcion callback</button>
+
+<script src="main (1).js"></script>
+</body>
+
+</html>

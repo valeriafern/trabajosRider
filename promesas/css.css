@@ -1,0 +1,11 @@
+#botoncito {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    padding: 10px 20px;
+    background-color: yellow;
+    border: none;
+    color: black;
+    cursor: pointer;
+}
